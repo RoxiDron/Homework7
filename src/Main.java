@@ -3,9 +3,9 @@ public class Main {
         //Задание 1
         int downPayment = 0;
         int deposit = 15_000;
-        int month = 1;
+        int month = 0;
         while (downPayment < 2_459_000) {
-            downPayment = downPayment + deposit / 100;
+            downPayment = downPayment + deposit + (deposit / 100);
             month = month + 1;
             {
                 System.out.println("Месяц " + month + " , сумма накоплений равна " + downPayment + "   рублей ");
@@ -52,31 +52,27 @@ public class Main {
 
         //Задание 5
         int initialAmount1 = 15_000;
-        int targetAmount1 = 12_000_000;
-        int currentAmount1 = initialAmount1;
         int months1 = 0;
-        while (currentAmount1 < targetAmount1) {
-            currentAmount1 *= 1.07;
-            months1 = months1 + 6;
-            System.out.println(" Василию потребуется " + months1 + " месяцев: " + " чтобы накопить " + currentAmount1 + " рублей ");
+        while (initialAmount1 < 12_000_000) {
+            initialAmount1 *= 1.07;
+            months1++;
+            if (months1 % 6 == 0) {
+                System.out.println(" Василию потребуется " + months1 + " месяцев: " + " чтобы накопить " + initialAmount1 + " рублей ");
+            }
         }
 
         // Задание 6
         int initialAmount2 = 15_000;
-        int year1 = 9;
-        int months2 = 1;
-        int currentAmount2 = 0;
-        int monthsInYear = 12;
-        int monthsCurrentAmount2 = year1 * monthsInYear;
-        while (months2 < monthsCurrentAmount2) {
-            currentAmount2 = currentAmount2 + initialAmount2;
-            currentAmount2 = currentAmount2 + (currentAmount2 * 7) / 100;
-            months2 = months2 + 1;
-            if (months2 % 6 == 1) {
-                System.out.println(" Каждый " + months2 + " месяцев у Василия " + currentAmount2 + " рублей ");
+        int months2 = 0;
+        int months3 = 12 * 9;
+        while (months2 < months3) {
+            initialAmount2 *= 1.07;
+            months2++;
+            if (months2 % 6 == 0) {
+                System.out.println(" Василию потребуется " + months2 + " месяцев: " + " чтобы накопить " + initialAmount2 + " рублей ");
             }
-
         }
+
         // Задание 7
         int friday = 5;
         for (int day = friday; day <= 31; day += 7) {
