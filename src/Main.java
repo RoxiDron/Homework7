@@ -1,18 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        //Задание 1
+
+        System.out.println("Task 1");
+
         int downPayment = 0;
         int deposit = 15_000;
         int month = 0;
         while (downPayment < 2_459_000) {
             downPayment = downPayment + deposit + (deposit / 100);
             month = month + 1;
-            {
-                System.out.println("Месяц " + month + " , сумма накоплений равна " + downPayment + "   рублей ");
-            }
+            System.out.println("Месяц " + month + " , сумма накоплений равна " + downPayment + "   рублей ");
+
         }
 
-        //Задание 2
+        System.out.println("Task 2");
+
         int i = 1;
         while (i < 11) {
             System.out.print(i + " ");
@@ -27,7 +29,8 @@ public class Main {
         }
 
 
-        //Задание 3
+        System.out.println("Task 3");
+
         int popuLation = 12_000_000;
         int birthRate = 17;
         int morTality = 8;
@@ -39,7 +42,8 @@ public class Main {
             System.out.println("Год " + year + " , численность населения составляет " + popuLation);
         }
 
-        //Задание 4
+        System.out.println("Task 4");
+
         int initialAmount = 15_000;
         int targetAmount = 12_000_000;
         int currentAmount = initialAmount;
@@ -50,36 +54,40 @@ public class Main {
             System.out.println(" Василию потребуется " + months + " месяцев: " + " чтобы накопить " + currentAmount + " рублей ");
         }
 
-        //Задание 5
-        int initialAmount1 = 15_000;
-        int months1 = 0;
-        while (initialAmount1 < 12_000_000) {
-            initialAmount1 *= 1.07;
-            months1++;
-            if (months1 % 6 == 0) {
-                System.out.println(" Василию потребуется " + months1 + " месяцев: " + " чтобы накопить " + initialAmount1 + " рублей ");
+        System.out.println("Task 5");
+
+        int initialAmountOfMoney = 15_000;
+        int MonthInARow = 0;
+        while (initialAmountOfMoney < 12_000_000) {
+            initialAmountOfMoney *= 1.07;
+            MonthInARow++;
+            if (MonthInARow % 6 == 0) {
+                System.out.println(" Василию потребуется " + MonthInARow + " месяцев: " + " чтобы накопить " + initialAmountOfMoney + " рублей ");
             }
         }
 
-        // Задание 6
-        int initialAmount2 = 15_000;
-        int months2 = 0;
-        int months3 = 12 * 9;
-        while (months2 < months3) {
-            initialAmount2 *= 1.07;
-            months2++;
-            if (months2 % 6 == 0) {
-                System.out.println(" Василию потребуется " + months2 + " месяцев: " + " чтобы накопить " + initialAmount2 + " рублей ");
+        System.out.println("Task 6");
+
+        int initialAmountOf = 15_000;
+        int monthSix = 0;
+        int monthsSix = 12 * 9;
+        while (monthSix < monthsSix) {
+            initialAmountOf *= 1.07;
+            monthSix++;
+            if (monthSix % 6 == 0) {
+                System.out.println(" Василию потребуется " + monthSix + " месяцев: " + " чтобы накопить " + initialAmountOf + " рублей ");
             }
         }
 
-        // Задание 7
+        System.out.println("Task 7");
+
         int friday = 5;
         for (int day = friday; day <= 31; day += 7) {
             System.out.println("Сегодня пятница " + day + "-е число. Необходимо подготовить отчёт ");
         }
 
-        // Задание 8
+        System.out.println("Task 8");
+
         int period = 79;
         int firstStart = 0;
         int currentYear = 2025;
