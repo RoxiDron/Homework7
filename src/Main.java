@@ -35,7 +35,7 @@ public class Main {
         int birthRate = 17;
         int morTality = 8;
         int year = 1;
-        for (; year < 10; year++) {
+        for (year = 1; year < 10; year++) {
             birthRate = 17 * popuLation / 1000;
             morTality = 8 * popuLation / 1000;
             popuLation = popuLation + birthRate - morTality;
@@ -98,5 +98,6 @@ public class Main {
                 System.out.println(year2);
             }
         }
+
     }
 }
